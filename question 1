@@ -1,0 +1,23 @@
+' StudentRecord Class
+Public Class StudentRecord
+
+    ' Fields (Variables)
+    Private studentID As String
+    Private name As String
+    Private course As String
+
+    ' Constructor
+    Public Sub New(id As String, studentName As String, studentCourse As String)
+        studentID = id
+        name = studentName
+        course = studentCourse
+    End Sub
+
+    ' Method to display student information
+    Public Sub DisplayInfo()
+        Console.WriteLine("Student ID: " & studentID)
+        Console.WriteLine("Name: " & name)
+        Console.WriteLine("Course: " & course)
+    End Sub
+
+End Class

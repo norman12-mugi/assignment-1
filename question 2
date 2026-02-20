@@ -1,0 +1,28 @@
+' Main Application Class
+Module StudentApp
+
+    Sub Main()
+
+        ' Prompt user for input
+        Console.Write("Enter Student ID: ")
+        Dim id As String = Console.ReadLine()
+
+        Console.Write("Enter Name: ")
+        Dim studentName As String = Console.ReadLine()
+
+        Console.Write("Enter Course: ")
+        Dim studentCourse As String = Console.ReadLine()
+
+        ' Create object of StudentRecord
+        Dim student As New StudentRecord(id, studentName, studentCourse)
+
+        ' Display student information
+        Console.WriteLine()
+        Console.WriteLine("Student Details:")
+        student.DisplayInfo()
+
+        Console.ReadLine()
+
+    End Sub
+
+End Module
